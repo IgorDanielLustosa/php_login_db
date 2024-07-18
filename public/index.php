@@ -18,3 +18,24 @@ if (isset($_SESSION['usuario'])) {
 if (isset($_SESSION['usuario']) && $rota == 'login') {
     $rota = 'home';
 }
+
+// se a rota não existe - if the route does not exist
+if(!in_array($rota, $rotas_permitidas)){
+    $rota = '404';
+}
+
+
+//apresentação da página - page presemtation
+$script = null;
+switch ($rota){
+    case '404':
+        $script = '404.php';
+        break;
+    
+    case 'login':
+        $script = 'login.php';
+
+    case 'home':
+        $script = 'home.php';
+}
+
