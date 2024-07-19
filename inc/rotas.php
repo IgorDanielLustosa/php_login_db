@@ -3,8 +3,7 @@
 return [
     '404',
     'home',
-    'login',
-    'logout',
+    'login', 
     'login_submit',
     'logout',
 
