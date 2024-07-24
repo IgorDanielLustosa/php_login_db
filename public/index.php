@@ -36,7 +36,6 @@ switch ($rota) {
         break;
 
     case 'login_submit':
-        die('1');
         $script = 'login_submit.php';
         break;
 
